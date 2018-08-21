@@ -145,7 +145,7 @@ When you are ready to submit, be sure to save, commit, and push your final resul
 
 1.  Click the *Pull Requests* tab near the top of the page.
 2.  Click the green button that says "New pull request".
-3.  Click the dropdown menu button labeled "base:", and select the option `starting`.
+3.  Click the dropdown menu button labeled "base:", and select the option `grading`.
 4.  Confirm that the dropdown menu button labled "compare:" is set to `master`.
 5.  Click the green button that says "Create pull request".
 6.  Give the *pull request* the following title: `Submission: Homework 1, FirstName LastName`, replacing `FirstName` and `LastName` with your actual first and last name.
