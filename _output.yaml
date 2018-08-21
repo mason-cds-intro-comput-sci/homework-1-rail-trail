@@ -1,0 +1,23 @@
+html_document:
+  theme: default
+  toc: no
+  df_print: kable
+  fig_caption: no
+  number_sections: no
+  highlight: tango
+  smart: yes
+  dev: svg
+  self_contained: true
+pdf_document:
+  toc: false
+  df_print: kable
+  fig_caption: no
+  number_sections: no
+  highlight: tango
+  dev: pdf
+github_document:
+  toc: true
+  toc_depth: 4
+  dev: svg
+  df_print: kable
+  html_preview: false
