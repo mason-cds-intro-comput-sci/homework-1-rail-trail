@@ -1,5 +1,8 @@
 Homework 1
-================
+==========
+
+> Your first major assignment is a set of exercises based around a single dataset called rail_trail, which will provide you with practice in creating visualizations using R and ggplot2.
+
 Due: Month, Day Year @ Time
 
 -   [Instructions](#instructions)

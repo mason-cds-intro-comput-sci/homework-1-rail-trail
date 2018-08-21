@@ -1,18 +1,19 @@
+---
 html_document:
   theme: default
-  toc: no
+  toc: false
   df_print: kable
-  fig_caption: no
-  number_sections: no
+  fig_caption: false
+  number_sections: false
   highlight: tango
-  smart: yes
+  smart: true
   dev: svg
-  self_contained: true
+  self_contained: false
 pdf_document:
   toc: false
   df_print: kable
-  fig_caption: no
-  number_sections: no
+  fig_caption: false
+  number_sections: false
   highlight: tango
   dev: pdf
 github_document:
@@ -21,3 +22,5 @@ github_document:
   dev: svg
   df_print: kable
   html_preview: false
+  pandoc_args: --webtex
+...
