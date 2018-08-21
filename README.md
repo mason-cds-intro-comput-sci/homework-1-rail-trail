@@ -3,7 +3,7 @@ Homework 1
 
 > Your first major assignment is a set of exercises based around a single dataset called rail_trail, which will provide you with practice in creating visualizations using R and ggplot2.
 
-Due: Month, Day Year @ Time
+Due: Month Day, Year @ Time
 
 -   [Instructions](#instructions)
 -   [The rail trail dataset](#the-rail-trail-dataset)
@@ -15,7 +15,7 @@ Due: Month, Day Year @ Time
 Instructions
 ------------
 
-Use the R Markdown file `homework_1.Rmd` to do your work when completing the questions below. Be sure to save, commit, and push (upload) frequently to Github so that you have incremental snapshots of your work. When you're done, follow the [**How to submit** section](#how-to-submit) below to setup a Pull Request, which will be used for feedback.
+Use the R Markdown file `homework_1.Rmd` to do your work and write-up when completing the questions below. Remember to fill in your name at the top of the R Markdown document and be sure to save, commit, and push (upload) frequently to Github so that you have incremental snapshots of your work. When you’re done, follow the [How to submit](#how-to-submit) section below to setup a Pull Request, which will be used for feedback.
 
 -   Remember that the point of us using RMarkdown documents is to combine code and writeups! Each block of R code should have some sort of explanation or justification using full sentences.
 
