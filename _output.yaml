@@ -8,7 +8,7 @@ html_document:
   highlight: tango
   smart: true
   dev: svg
-  self_contained: false
+  self_contained: true
 pdf_document:
   toc: false
   df_print: kable
