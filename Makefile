@@ -1,34 +1,31 @@
-SHELL									=		/bin/sh
+SHELL			=		/bin/sh
 
-RM										=		rm
-ECHO									=		echo
-COPY									=		cp
+RM				=		rm
+ECHO			=		echo
+COPY			=		cp
 
-R										=		R
-RSCRIPT									=		Rscript
-ROPTS									=		--slave
+R				=		Rscript
 
-RMD_FILENAME							=		homework_1
-HTML									=		$(RMD_FILENAME).html
-PDF										=		$(RMD_FILENAME).pdf
-MD										=		$(RMD_FILENAME).md
+RMD_FILENAME	=		homework_1
+HTML			=		$(RMD_FILENAME).html
+PDF				=		$(RMD_FILENAME).pdf
+MD				=		$(RMD_FILENAME).md
 
-HTML_OUTPUT								=		html_document
-PDF_OUTPUT								=		pdf_document
-MD_OUTPUT								=		github_document
+HTML_OUTPUT		=		html_document
+PDF_OUTPUT		=		pdf_document
+MD_OUTPUT		=		github_document
 
-HTML_EXT								=		%.html : %.Rmd
-PDF_EXT									=		%.pdf : %.Rmd
-MD_EXT									=		%.md : %.Rmd
+HTML_EXT		=		%.html : %.Rmd
+PDF_EXT			=		%.pdf : %.Rmd
+MD_EXT			=		%.md : %.Rmd
 
-ALL_FILES								=		$(PDF)							\
-												$(MD)							\
-												$(HTML)
+ALL_FILES		=		$(PDF)													\
+						$(HTML)
 
-CLEAN_FILES								=		*_files/						\
-												*_cache/						\
-												$(PDF:.pdf=.synctex.gz)			\
-												$(PDF:.pdf=.tex)
+CLEAN_FILES		=		*_files/												\
+						*_cache/												\
+						$(PDF:.pdf=.synctex.gz)									\
+						$(PDF:.pdf=.tex)
 
 define cleanup
 	-$(RM) -rf $(CLEAN_FILES)
@@ -36,8 +33,8 @@ define cleanup
 endef
 
 define rmarkdown_render
-	$(R) $(ROPTS) -e "rmarkdown::render(input='$<', output_file='$@',					\
-	output_format='$(1)')"
+	$(R) -e "rmarkdown::render(input='$<', output_file='$@',					\
+			 output_format='$(1)')"
 endef
 
 .SILENT :
